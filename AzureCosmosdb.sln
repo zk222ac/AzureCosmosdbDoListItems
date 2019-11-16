@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29424.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureCosmosdb", "AzureCosmosdb\AzureCosmosdb.csproj", "{14950F53-FB9B-4DD6-91BC-F8A8AD53DE7E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14950F53-FB9B-4DD6-91BC-F8A8AD53DE7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14950F53-FB9B-4DD6-91BC-F8A8AD53DE7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14950F53-FB9B-4DD6-91BC-F8A8AD53DE7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14950F53-FB9B-4DD6-91BC-F8A8AD53DE7E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A863383A-81F2-4B7D-9877-F8FA1986319D}
+	EndGlobalSection
+EndGlobal

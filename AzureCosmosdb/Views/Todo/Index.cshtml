@@ -1,0 +1,73 @@
+﻿@model IEnumerable<AzureCosmosdb.Models.TodoModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>List Items</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+<div>
+    <button class="btn btn-primary" onclick="location.href='@Url.Action("FilterByCompletetedByVacation", "Todo")'">Filter By Completed & Vacation</button>|
+    <button class="btn btn-primary" onclick="location.href='@Url.Action("Index", "Todo")'">Refresh</button>
+
+</div>
+<br />
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Group)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Content)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Due)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Completed)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TimeStamp)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Group)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Content)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Due)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Completed)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TimeStamp)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id, group = item.Group }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.Id, item.Group }) |
+                    @Html.ActionLink("Delete", "ConfirmDelete", new { id = item.Id, item.Group })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
